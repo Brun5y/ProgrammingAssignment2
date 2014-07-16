@@ -38,9 +38,9 @@ cacheSolve <- function(x, ...) { ## Declares cacheSolve function which takes as 
                                  ## of the list x.
     if(!is.null(inverse)) {      ## If statement that checks to see if inverse is
                                  ## still empty 
-                                 ## if not, it prints the value of inverse
-        message("getting cached data")  ## prints the message to council
-        return(inverse)          ## returns the value of the inverse and exits the 
+                                 ## If not, it prints the value of inverse
+        message("getting cached data")  ## Prints the message to console
+        return(inverse)          ## Returns the value of the inverse and exits the 
                                  ## function
     }
     data <- x$get()              ## Sets the value of data to the value retrieved
@@ -50,5 +50,5 @@ cacheSolve <- function(x, ...) { ## Declares cacheSolve function which takes as 
     x$setinverse(inverse)        ## Sets the stored value of setinverse, which 
                                  ## is an element of the list x, to the value of
                                  ## the calculated inverse                           
-    print(inverse)               ## prints the value of the inverse matrix
+    print(inverse)               ## Prints the value of the inverse matrix
 }
